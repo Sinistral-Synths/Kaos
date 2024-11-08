@@ -1,9 +1,9 @@
 <Cabbage>
-    form caption("Kaos") size(400, 300), guiMode("queue") pluginId("def1")
-    rslider bounds(296, 162, 100, 100), channel("softness"), range(0, 1, 0.01, 1, 0.01), text("Softness"), trackerColour("lime"), outlineColour(0, 0, 0, 50), textColour("black")
-    rslider bounds(12, 24, 100, 100), channel("balance"), range(0, 1, 0.5, 1, 0.01), text("Balance"), trackerColour("lime"), outlineColour(0, 0, 0, 50), textColour("black")
-    rslider bounds(12, 162, 100, 100), channel("crunch"), range(0, 1, 0.5, 1, 0.01), text("Crunch"), trackerColour("lime"), outlineColour(0, 0, 0, 50), textColour("black") 
-    rslider bounds (296, 24, 100, 100), channel("suffocation"), range(0, 1, 0, 1, 0.01), text("Suffocation"), trackerColour("lime"), outlineColour(0, 0, 0, 50), textColour("black")
+    form caption("Kaos") size(300, 450), guiMode("queue") pluginId("def1")
+    rslider bounds(178, 162, 110, 110), channel("softness"), range(0, 1, 0.01, 1, 0.01), text("Softness"), filmstrip("images/knob.png", 64), textColour("black")
+    rslider bounds(12, 24, 110, 110), channel("balance"), range(0, 1, 0.5, 1, 0.01), text("Balance"), filmstrip("images/knob.png", 64), textColour("black")
+    rslider bounds(12, 162, 110, 110), channel("crunch"), range(0, 1, 0.5, 1, 0.01), text("Crunch"), filmstrip("images/knob.png", 64), textColour("black") 
+    rslider bounds (178, 24, 110, 110), channel("suffocation"), range(0, 1, 0, 1, 0.01), text("Suffocation"), filmstrip("images/knob.png", 64), textColour("black")
 </Cabbage>
 <CsoundSynthesizer>
     <CsOptions>
@@ -43,7 +43,7 @@
         kAmpR rms aR
         
         aNoise noise 1, kSoftness
-        aNoise powershape aNoise, kCrunch; , iAmpMax ; Exponentiates noise signal to add distortion and scales accordingly
+        aNoise powershape aNoise, kCrunch; Exponentiates noise signal to add distortion and scales accordingly
         aNoise pdhalf aNoise, kSuffocate ; Applies a phase distortion
         
         aL gain aL, kInAmp * kAmpL
