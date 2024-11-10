@@ -1,10 +1,10 @@
 <Cabbage>
     form caption("Kaos") size(300, 450), guiMode("queue") pluginId("def1")
     image bounds(0, 0, 300, 450), file("images/bg.png")
-    rslider bounds(178, 162, 110, 110), channel("softness"), range(0, 1, 0.01, 1, 0.01), text("Softness"), filmstrip("images/knob.png", 64), textColour("black")
-    rslider bounds(12, 24, 110, 110), channel("balance"), range(0, 1, 0.5, 1, 0.01), text("Balance"), filmstrip("images/knob.png", 64), textColour("black")
-    rslider bounds(12, 162, 110, 110), channel("crunch"), range(0, 1, 0.5, 1, 0.01), text("Crunch"), filmstrip("images/knob.png", 64), textColour("black") 
-    rslider bounds (178, 24, 110, 110), channel("suffocation"), range(0, 1, 0, 1, 0.01), text("Suffocation"), filmstrip("images/knob.png", 64), textColour("black")
+    rslider bounds(178, 162, 110, 110), channel("softness"), range(0, 1, 0.01, 1, 0.01), filmstrip("images/knob.png", 64), textColour("black")
+    rslider bounds(12, 24, 110, 110), channel("balance"), range(0, 1, 0.5, 1, 0.01), filmstrip("images/knob.png", 64), textColour("black")
+    rslider bounds(12, 162, 110, 110), channel("crunch"), range(0, 1, 0.5, 1, 0.01), filmstrip("images/knob.png", 64), textColour("black") 
+    rslider bounds (178, 24, 110, 110), channel("suffocation"), range(0, 1, 0, 1, 0.01), filmstrip("images/knob.png", 64), textColour("black")
 </Cabbage>
 <CsoundSynthesizer>
     <CsOptions>
