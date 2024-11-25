@@ -8,7 +8,7 @@ AppName={#MyAppName}
 AppVersion=1.0
 AppPublisher="Kedar Panchal"
 ArchitecturesInstallIn64BitMode=x64compatible
-DefaultDirName={commonpf}\VST3\{#MyAppName}
+DefaultDirName="{commoncf}\VST3"
 LicenseFile="./LICENSE"
 OutputBaseFilename="KaosInstaller"
 OutputDir="{#ExportsDir}"
@@ -16,6 +16,7 @@ Compression=lzma
 SolidCompression=yes
 ChangesEnvironment=yes
 ShowLanguageDialog=no
+UsePreviousAppDir=no
 
 [Components]
 Name: "main"; Description: "Kaos Installation"; Types: full custom; Flags: fixed;
@@ -26,8 +27,11 @@ Name: "{app}\{#MyAppDir}"; Permissions: users-full;
 Name: "{app}\{#MyAppDir}\{#GraphicsDir}"; Permissions: users-full;
 
 [Files]
-Source: "{#ExportsDir}\*"; DestDir: "{app}\{#MyAppDir}"; Components: main; Permissions: users-full;
-Source: "{#GraphicsDir}\*.png"; DestDir: "{app}\{#MyAppDir}\{#GraphicsDir}"; Components: main; Permissions: users-full;
+Source: "{#ExportsDir}\kaos.csd"; DestDir: "{app}\{#MyAppDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
+Source: "{#ExportsDir}\csound64.dll"; DestDir: "{app}\{#MyAppDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
+Source: "{#ExportsDir}\kaos.vst3"; DestDir: "{app}\{#MyAppDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
+Source: "{#GraphicsDir}\bg.png"; DestDir: "{app}\{#MyAppDir}\{#GraphicsDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
+Source: "{#GraphicsDir}\knob.png"; DestDir: "{app}\{#MyAppDir}\{#GraphicsDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
 
 Source: "C:\Program Files\Csound6_x64\*"; DestDir: "C:\Program Files\Csound6_x64\"; Flags: ignoreversion recursesubdirs; Components: csound; Permissions: users-full;
 
