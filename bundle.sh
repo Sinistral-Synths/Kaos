@@ -10,4 +10,8 @@ if [[ ${2} == *.component ]]; then
     install_name_tool -id "@rpath/CsoundLib64.framework/CsoundLib64" CsoundLib64
     cd ../../MacOS
     install_name_tool -change /Library/Frameworks/CsoundLib64.framework/CsoundLib64 @loader_path/../Resources/CsoundLib64.framework/CsoundLib64 CabbagePluginEffect
+    cd ../../../..
+    sudo codesign -s - "${2}/Contents/Resources/CsoundLib64.framework/libs/libsndfile.1.dylib" --timestamp --deep --force
+    sudo codesign -s - "${2}/Contents/Resources/CsoundLib64.framework/Versions/6.0/CsoundLib64" --timestamp --deep --force
+    sudo codesign -s - "${2}/Contents/MacOS/CabbagePluginEffect" --timestamp --deep --force
 fi
