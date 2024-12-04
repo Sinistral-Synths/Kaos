@@ -28,6 +28,8 @@ Name: "{app}\{#MyAppDir}\{#GraphicsDir}"; Permissions: users-full;
 
 [Files]
 Source: "kaos.csd"; DestDir: "{app}\{#MyAppDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
+Source: "{#GraphicsDir}\bg.png"; DestDir: "{app}\{#MyAppDir}\{#GraphicsDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
+Source: "{#GraphicsDir}\knob.png"; DestDir: "{app}\{#MyAppDir}\{#GraphicsDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
 Source: "{#ExportsDir}\csound64.dll"; DestDir: "{app}\{#MyAppDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
 Source: "{#ExportsDir}\kaos.vst3"; DestDir: "{app}\{#MyAppDir}"; Components: main; Flags: ignoreversion; Permissions: users-full;
 
