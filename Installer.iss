@@ -9,6 +9,7 @@ AppVersion=1.0
 AppPublisher="Kedar Panchal"
 ArchitecturesInstallIn64BitMode=x64compatible
 DefaultDirName="{commoncf}\VST3"
+UninstallFilesDir="{app}"
 LicenseFile="./LICENSE"
 OutputBaseFilename="KaosInstaller"
 OutputDir="{#ExportsDir}"
