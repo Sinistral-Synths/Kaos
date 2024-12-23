@@ -1,3 +1,4 @@
 .gitattributes
 /exports
 .DS_Store
+/images/banner.*
