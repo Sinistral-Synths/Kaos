@@ -1,5 +1,5 @@
 .gitattributes
 /exports
 .DS_Store
-**/**.xcf
-!/images/bg.xcf
+
+/images/estore
