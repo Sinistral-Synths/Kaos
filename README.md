@@ -12,7 +12,6 @@ Kaos is a simple yet robust VST3 effect pedal that mixes an input signal with an
 * [What is Kaos?](#what-is-kaos)
     * [Pedal Settings](#pedal-settings)
 * [License](#license)
-* [Contact Me](#contact-me)
 
 ## What is Kaos?
 
@@ -41,10 +40,3 @@ Kaos has 4 different adjustable parameters that impacts the mixing and timbre of
 [Back to top](#table-of-contents)
 
 Kaos is licensed under the GNU General Public License Version 3 (GPLv3). The full license can be read under the `LICENSE` file bundled with the effect pedal.
-
-## Contact Me
-
----
-[Back to top](#table-of-contents)
-
-If you have any suggestions, questions, or issues with the Kaos effect pedal, feel free to contact me at sinistralsynths@gmail.com. I'd also love to see what music and modifications you make with and to my software, so feel free to shoot me an email to show that off as well!
