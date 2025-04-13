@@ -11,7 +11,7 @@ Kaos is a simple yet robust VST3 effect pedal that mixes an input signal with an
 ---
 * [What is Kaos?](#what-is-kaos)
     * [Pedal Settings](#pedal-settings)
-* [What the GPL License Can Do For You](#what-the-gpl-license-can-do-for-you)
+* [License](#license)
 * [Contact Me](#contact-me)
 
 ## What is Kaos?
@@ -35,14 +35,12 @@ Kaos has 4 different adjustable parameters that impacts the mixing and timbre of
 4. **Softness:** The opposite of Crunch, higher values of Softness result in a softer and more muted white noise generated. This does not negate the Crunch value, though, so this parameter can be adjusted in tandem with Crunch to create interesting muted, crackling noise effects.
     > Softness nonlinearly impacts the cutoff frequency of the inbuilt lowpass filter of Kaos's white noise generator. The Softness varies inversely with the cutoff frequency, meaning higher values of softness indicate a lower cutoff frequency.
 
-## What the GPL License Can Do For You
+## License
 
 ---
 [Back to top](#table-of-contents)
 
 Kaos is licensed under the GNU General Public License Version 3 (GPLv3). The full license can be read under the `LICENSE` file bundled with the effect pedal.
-
-In short, the GPLv3 means that by purchasing this product, you don't just gain access to the effect pedal but you also gain access to its underlying code, too. This means that you have free reign over the software, including the right to modify and redistribute the code as you wish (even for a price), so long as your modifications and redistributions are also licensed under the GPLv3.
 
 ## Contact Me
 
