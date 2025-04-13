@@ -1,5 +1,6 @@
 .gitattributes
-/exports
+/exports/*
+!/exports/KaosInstaller.exe
 .DS_Store
 
 /images/estore/*
