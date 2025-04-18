@@ -11,6 +11,10 @@ Kaos is a simple yet robust VST3 effect pedal that mixes an input signal with an
 ---
 * [What is Kaos?](#what-is-kaos)
     * [Pedal Settings](#pedal-settings)
+* [Installation](#installation)
+    * [Windows](#windows)
+    * [MacOS](#macos)
+* [Asset Credits](#asset-credits)
 * [License](#license)
 
 ## What is Kaos?
@@ -34,9 +38,30 @@ Kaos has 4 different adjustable parameters that impacts the mixing and timbre of
 4. **Softness:** The opposite of Crunch, higher values of Softness result in a softer and more muted white noise generated. This does not negate the Crunch value, though, so this parameter can be adjusted in tandem with Crunch to create interesting muted, crackling noise effects.
     > Softness nonlinearly impacts the cutoff frequency of the inbuilt lowpass filter of Kaos's white noise generator. The Softness varies inversely with the cutoff frequency, meaning higher values of softness indicate a lower cutoff frequency.
 
+## Installation
+
+---
+[Back to top](#table-of-contents)
+### Windows
+Download the `.exe` installer from the [latest release](https://github.com/Sinistral-Synths/Kaos/releases/latest) and run it. If you already have CSound 6.7+ installed on your computer, be sure to uncheck the option to install it in the installer.
+
+### MacOS
+> <b>Note:</b> A version of [64-bit CSound 6.7+](https://csound.com/download.html) needs to be installed on your machine for both the VST3 plugin and the binary distributions of Kaos to work.
+
+Download the VST3 version of the `.zip` or `.tar.gz` archive from the [latest release](https://github.com/Sinistral-Synths/Kaos/releases/latest) on GitHub. Extract the archive into a folder and move the extracted folder to the following location: `Library/Audio/Plug-ins/VST3`
+
+Afterward, fire up your DAW and re-scan for plugins to make sure Kaos shows up.
+
+## Asset Credits
+
+---
+[Back to top](#table-of-contents)
+
+The knob designs are slightly modified versions of the simple and wave knob tempaltes of the [KnobMan3D](https://github.com/g200kg/knobman3d) filmstrip generator. The font used in the UI is the Strasua font by [Typodermic Fonts](https://www.dafont.com/strasua.font).
+
 ## License
 
 ---
 [Back to top](#table-of-contents)
 
-Kaos is licensed under the GNU General Public License Version 3 (GPLv3). The full license can be read under the `LICENSE` file bundled with the effect pedal.
+The GNU General Public License v3.0 2024 - [Kedar Panchal](https://github.com/KedarPanchal). Please look at the [LICENSE](LICENSE) for further information.
